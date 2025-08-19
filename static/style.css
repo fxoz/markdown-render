@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('/_static/fonts/Inter.woff2') format('woff2-variations');
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FiraCode';
+    src: url('/_static/fonts/FiraCode.woff2') format('woff2-variations');
+    font-weight: 300 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+:root {
+    --text: #e0def4;
+    --border: #e0def422;
+    --bg: #232136
+}
+
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: 'Inter', sans-serif;
+
+    color: var(--text);
+    background-color: var(--bg);
+    line-height: 1.6;
+}
+
+footer {
+    opacity: 80%;
+    border-top: 1px solid var(--border);
+    padding-top: 1rem;
+    margin-top: 3rem;
+}
+
+a {
+    color: var(--text);
+}
+
+img {
+    max-width: 100%;
+    max-height: 500px;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1rem 0;
+
+    th {
+        background-color: var(--border);
+    }
+
+    th,
+    td {
+        padding: 0.5rem 1rem;
+        border: 1px solid var(--border);
+    }
+}
+
+code,
+pre {
+    font-family: 'FiraCode', monospace;
+}
+
+::selection {
+    background-color: var(--border);
+    color: var(--text);
+}
